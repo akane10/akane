@@ -1,0 +1,39 @@
+{
+  "name": "akane",
+  "version": "1.0.0",
+  "description": "A personal card for Yapie Rosyadie (@akane)",
+  "main": "/bin/card.js",
+  "bin": {
+    "akane": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akane10/akane.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Yapie Rosyadie <yrosyadie@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  }
+}
